@@ -7968,7 +7968,8 @@ A = window, t = function () {
         if (void 0 === t && (t = !1), void 0 === n && (n = !1), !A || !A.trim()) return Promise.resolve(new Array);
         var i = function () {
           return Promise.resolve(o.post(r.C({
-            url: r.url + "/api/v1",
+            // url: r.url + "/api/v1",
+              url: "http://127.0.0.1:4523/m1/2090095-0-default/api/v1",
             data: {
               text: A,
               language: r.languageIsoCode,
