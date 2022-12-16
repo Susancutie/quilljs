@@ -7971,14 +7971,14 @@ A = window, t = function () {
             // url: r.url + "/api/v1",
             //   url: "http://127.0.0.1:4523/m1/2090095-0-default/api/v1",
               url: "http://127.0.0.1:8081/correct/",
-            data: {
+            data: JSON.stringify({
               text: A,
               language: r.languageIsoCode,
               includeSpelling: r.checkSpelling && !n,
               includeGrammar: r.checkGrammar,
               includeStyle: r.checkStyle && !n,
               heavyGrammar: n
-            }
+            })
           })).then(function (t) {
             var n = t.data;
             t.status;
